@@ -9,11 +9,10 @@ class User:
     def descripe_user(self):
         print(self.first_name)
         print(self.last_name)
+        print(self.age)
 
     def greeting_user(self):
-        print(self.first_name)
-        print(self.last_name)
+        return "{} {}".format(self.first_name, self.last_name)
+
 
 user = User("Yuriy", "Semesyuk")
-
-User.descripe_user(user)
